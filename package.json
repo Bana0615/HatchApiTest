@@ -1,0 +1,16 @@
+{
+  "name": "my-express-app",
+  "version": "1.0.0",
+  "description": "A simple Express.js app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js --port 3002"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": [],
+  "type": "commonjs"
+}
