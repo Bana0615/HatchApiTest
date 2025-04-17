@@ -8,7 +8,7 @@ app.use(express.json());
 // In-memory storage for key-value pairs
 const keyValueStore = {};
 
-// Example Call: curl http://localhost:3000/api/kv/anotherKey
+// Example Call: curl http://localhost:3002/api/kv/anotherKey
 // GET request to retrieve a value by key
 app.get("/api/kv/:key", (req, res) => {
   const key = req.params.key;
@@ -19,7 +19,7 @@ app.get("/api/kv/:key", (req, res) => {
   }
 });
 
-// Example Call: curl -X POST -H "Content-Type: application/json" -d '{"key": "anotherKey", "value": 123}' http://localhost:3000/api/kv
+// Example Call: curl -X POST -H "Content-Type: application/json" -d '{"key": "anotherKey", "value": 123}' http://localhost:3002/api/kv
 // POST request to store or update a key-value pair
 app.post("/api/kv", (req, res) => {
   const { key, value } = req.body;
